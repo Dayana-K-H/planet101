@@ -4,14 +4,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        hitam: '#010101',
-        ungu: '#855AB4',
-        birdong: '#02034E ',
+        hitam: "#010101",
+        hitamBiru: '#010229',
+        ungu: "#855AB4",
+        birdong: "#02034E ",
+        grayText: "#D9D9D9",
+        abu: "#666666",
       },
       fontFamily: {
-        Inter: ['Inter']
+        Outfit: ["Outfit", "sans-serif"],
       },
     },
   },
   plugins: [],
-}
+};

@@ -6,12 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planet101</title>
     <link rel="stylesheet" href="output.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit&display=swap">
 </head>
 
-<body class="bg-cover bg-center" style="background-image: url('assets/background.png')">
+<body class="font-Outfit bg-cover bg-center overflow-x-hidden scroll-smooth" style="background-image: url('assets/background.png')">
+    <!-- hero section start -->
+    <section class="min-h-screen flex flex-col">
+        <!-- header start -->
+        <header class="py-5 md:py-3 px-10 md:px-24 w-screen">
+            <nav class="flex justify-between md:justify-start">
+                <div class="flex justify-center items-center">
+                    <img src="./assets/logo.svg" alt="Logo planet" />
+                    <h1 class="text-xl md:text-2xl text-white">Planet101</h1>
+                </div>
+                <div>
+                    <div
+                        class="nav-link pb-5 md:py-5 px-10 w-screen md:bg-transparent absolute -top-full md:top-auto left-0 md:flex md:items-center md:justify-center">
+                        <ul class="flex flex-col md:flex-row gap-7 md:gap-9">
+                            <li
+                                class="text-xs text-white px-5 md:px-0 md:mx-3 hover:text-ungu duration-700 ease-in-out">
+                                <a href="#hero">Beranda</a>
+                            </li>
+                            <li
+                                class="text-xs text-white px-5 md:px-0 md:mx-3 hover:text-ungu duration-500 ease-in-out">
+                                <a href="#about">Tentang</a>
+                            </li>
+                            <li
+                                class="text-xs text-white px-5 md:px-0 md:mx-3 hover:text-ungu duration-500 ease-in-out">
+                                <a href="#">Artikel</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <span onclick="Menu()" class="block cursor-pointer md:hidden">
+                    <svg class="w-10 h-10 text-white dark:text-white" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
+                            d="M5 7h14M5 12h14M5 17h14" />
+                    </svg>
+                </span>
+            </nav>
+        </header>
+        <!-- header end -->
+
+        <!-- hero  start -->
+        <section id="hero" class="relative mb-[400px] flex justify-center w-full md:h-screen">
+            <div class="w-1/3 h-[600px] md:h-screen md:py-10 flex flex-col justify-center items-center">
+                <h1
+                    class="text-6xl md:text-7xl text-white font-outfit font-medium text-center p-5 leading-relaxed md:leading-relaxed">
+                    Jelajahi Planet Kita
+                </h1>
+                <a href="#definition"
+                    class="w-36 md:w-52 h-7 md:h-12 flex justify-center items-center bg-ungu shadow-md text-md md:text-2xl text-white font-semibold font-outfit rounded-md hover:bg-purple-400 duration-500 ease-in-out ">
+                    Ayo!
+                </a>
+            </div>
+
+            <img class="w-60 absolute -top-3 md:top-0 right-0  md:w-auto -z-10 overflow-hidden"
+                src="/src/assets/meteor.png" alt="foto meteor" />
+
+            <img class="w-72 absolute -bottom-[420px] md:-bottom-[500px] left-0 md:w-auto -z-10"
+                src="/src/assets/planet1.png" alt="foto planet" />
+
+            <img class="w-72 absolute -bottom-52 md:-bottom-[600px] right-0 md:w-auto -z-10"
+                src="/src/assets/bintang.png" alt="foto bintang" />
+        </section>
+        <!-- hero end-->
+    </section>
+    <!-- hero section end-->
+
+    <!-- section 2 start-->
+    <section id="about" class="pt-36">
+        <div>
+            <div class="flex flex-wrap">
+                <div class="w-1/2 self-center px-4 md:w-2/3 md:px-16 lg:px-32">
+                    <h1 class="text-white mb-2 md:text-4xl md:mb-8 lg:text-6xl lg:mb-8">PLANET:</h1>
+                    <h2
+                        class="font-semibold text-white mb-2 md:text-4xl md:leading-relaxed md:mb-8 md:pr-6 lg:text-6xl lg:leading-relaxed lg:mb-10">
+                        Sang "Pengembara" Langit Malam!</h2>
+                    <p
+                        class="font-medium text-white text-xs text-justify mb-10 md:text-3xl pr-2 leading-relaxed md:pr-6 lg:leading-10 lg:pr-16">
+                        Tahukah kamu? "Planet" berasal dari kata Yunani "planēt" yang berarti "pengembara"! Dulu, para
+                        astronom melihat planet "pindah-pindah" di malam hari, beda dari bintang yang diam...</p>
+                    <button href="#"
+                        class="font-semibold text-white text-xs w-38 bg-ungu py-2 px-4 rounded-lg md:w-72 md:text-2xl md:py-4">Baca
+                        Selengkapnya!</button>
+                </div>
+                <div class="w-1/2 self-center md:w-1/3">
+                    <div>
+                        <img src="assets/bumi.svg" alt="bumi" class="max-w-full">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 2 end-->
+
+    <!-- start section about galaksi bima sakti -->
     <section class="flex px-16 md:px-24 md:py-24 lg:py-32 lg:px-36 py-16">
         <div class="flex flex-col gap-16 lg:gap-14 justify-center lg:flex-row">
             <div class="lg:p-18">
@@ -50,32 +141,154 @@
             </div>
         </div>
     </section>
+    <!-- end section about galaksi bima sakti -->
+
+    <!-- start section galeri planet -->
+    <img src="assets/satelit.svg" alt="satelit"
+        class="w-[600px] h-[400px] px-16 pb-16 mx-auto flex items-center align-middle text-center">
+    <section class="flex flex-col justify-center items-center align-middle text-center">
+        <h1 class="text-white lg:text-5xl text-3xl font-medium tracking-[-1.2px] py-16 text-center">Beberapa Planet Kita
+        </h1>
+        <div class="flex px-8 gap-1 pb-16 justify-center lg:flex-row md:flex-row flex-col">
+            <div class="flex pb-8">
+                <a href="venus.html"
+                    class="relative inline-block hover:scale-110 transition-transform duration-300 p-2 group">
+                    <img src="assets/venus-galeri.png" alt="venus">
+                    <span
+                        class="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center text-white opacity-50 group-hover:opacity-100 transition-opacity duration-500 lg:text-2xl text-lg font-medium tracking-[-0.7]">VENUS</span>
+                </a>
+                <a href="bumi.html"
+                    class="relative inline-block hover:scale-110 transition-transform duration-300 p-2 group">
+                    <img src="assets/bumi-galeri.png" alt="bumi">
+                    <span
+                        class="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center text-white opacity-50 group-hover:opacity-100 transition-opacity duration-500 lg:text-2xl text-lg font-medium tracking-[-0.7]">BUMI</span>
+                </a>
+            </div>
+            <div class="flex pb-8">
+                <a href="mars.html"
+                    class="relative inline-block hover:scale-110 transition-transform duration-300 p-2 group">
+                    <img src="assets/mars-galeri.png" alt="mars">
+                    <span
+                        class="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center text-white opacity-50 group-hover:opacity-100 transition-opacity duration-500 lg:text-2xl text-lg font-medium tracking-[-0.7]">MARS</span>
+                </a>
+                <a href="saturnus.html"
+                    class="relative inline-block hover:scale-110 transition-transform duration-300 p-2 group">
+                    <img src="assets/saturnus-galeri.png" alt="saturnus">
+                    <span
+                        class="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center text-white opacity-50 group-hover:opacity-100 transition-opacity duration-500 lg:text-2xl text-lg font-medium tracking-[-0.7]">SATURNUS</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- end section galeri planet -->
+
+    <!-- article section -->
+    <section class="py-5 px-10 md:px-24 min-h-screen flex flex-col justify-center items center">
+        <h1 class="text-white lg:text-5xl text-3xl font-medium tracking-[-1.2px] py-16 text-center">Berita dari Luar
+            Angkasa!</h1>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-3 md:gap-5 p-5">
+            <div
+                class="w-full md:h-[400px] aspect-video md:aspect-[10/18]  md:col-start-1 md:row-span-2 rounded-xl bg-dark flex flex-col overflow-hidden">
+                <div class="w-full h-3/4 bg-[url('/src/assets/earthNewHome.jpg')] bg-cover bg-center rounded-xl"></div>
+                <div class="px-3 py-2 w-full flex flex-row md:flex-col justify-between">
+                    <div>
+                        <h1 class="font-semibold text-xl text-grayText font-outfit">New Home</h1>
+                        <p class="text-xs md:text-[10px] text-grayText font-outfit">3 MIN READ</p>
+                    </div>
+                    <div class="h-full flex items-end">
+                        <button
+                            class="h-2/3 md:h-7 px-2 py-1 mt-2 bg-ungu text-grayText text-xs rounded-md font-Outfit font-semibold">Baca
+                            Sekarang!</button>
+                    </div>
+                </div>
+            </div>
+
+            <a
+                class="w-full md:h-[180px] aspect-video md:aspect-[4/3] bg-hitam rounded-xl md:relative md:group cursor-pointer">
+                <div
+                    class="w-full h-3/4 md:h-32 bg-[url('/src/assets/rockyPlanet.png')] bg-cover bg-center rounded-xl md:abolute md:group-hover:scale-125">
+                </div>
+                <div class="px-3 py-2 md:py-0 w-full flex justify-between">
+                    <div>
+                        <h1 class="font-semibold text-xl text-grayText font-Outfit">Rocky Planet</h1>
+                        <p class="text-xs md:text-[10px] text-grayText font-Outfit">2 MIN READ</p>
+                    </div>
+                    <div class="flex items-end">
+                        <button
+                            class="h-2/3 px-2 py-1 bg-ungu text-grayText text-xs rounded-md md:hidden font-Outfit font-semibold">Baca
+                            Sekarang!</button>
+                    </div>
+                </div>
+            </a>
+
+            <div class="w-full md:h-[180px] aspect-video md:aspect-[4/3] bg-hitam rounded-xl">
+                <div class="w-full h-3/4 md:h-32 bg-[url('/src/assets/nebula.jpg')] bg-cover bg-center rounded-xl">
+                </div>
+                <div class="px-3 py-2 md:py-0 w-full flex justify-between">
+                    <div>
+                        <h1 class="font-semibold text-xl text-grayText font-Outfit">Nebula</h1>
+                        <p class="text-xs md:text-[10px] text-grayText font-Outfit">1 MIN READ</p>
+                    </div>
+                    <div class="flex items-end">
+                        <button
+                            class="h-2/3 px-2 py-1 bg-ungu text-grayText text-xs rounded-md md:hidden font-Outfit font-semibold">Baca
+                            Sekarang!</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="w-full md:w-auto md:h-[200px] aspect-video md:aspect-auto md:col-span-2 bg-hitam rounded-xl">
+                <div class="w-full h-3/4 bg-[url('/src/assets/moon.jpg')] bg-cover bg-center rounded-xl"></div>
+                <div class="px-3 md:px-2 py-2 md:py-0 w-full flex justify-between">
+                    <div>
+                        <h1 class="font-semibold text-xl text-grayText font-Outfit">Moon & Art?</h1>
+                        <p class="text-xs md:text-[10px] text-grayText font-Outfit">3 MIN READ</p>
+                    </div>
+                    <div class="flex items-end">
+                        <button
+                            class="h-2/3 px-2 py-1 bg-ungu text-grayText text-xs rounded-md font-Outfit font-semibold">Baca
+                            Sekarang!</button>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="w-full aspect-[3/1] md:aspect-auto md:col-start-4 md:row-start-1 md:row-span-2 bg-gradient-to-b from-black via-hitamBiru to-birdong rounded-xl flex flex-wrap p-3">
+                <div>
+                    <h1 class="font-semibold text-xl text-grayText font-Outfit p-2">Topik Lainnya</h1>
+                    <div class="flex">
+                        <img src="/src/assets/iconFire.png" alt="icon api">
+                        <a
+                            class="px-2 font-medium text-md text-grayText font-Outfit hover:text-ungu cursor-pointer duration-500 transition-all">Nasa</a>
+                    </div>
+                    <div class="flex">
+                        <img src="/src/assets/iconFire.png" alt="icon api">
+                        <a
+                            class="px-2 font-medium text-md text-grayText font-Outfit hover:text-ungu cursor-pointer duration-500 transition-all">Pluto</a>
+                    </div>
+                    <div class="flex">
+                        <img src="/src/assets/iconFire.png" alt="icon api">
+                        <a
+                            class="px-2 font-medium text-md text-grayText font-Outfit hover:text-ungu cursor-pointer duration-500 transition-all">Neptunus</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- article section end -->
+
+    <!-- footer -->
+    <footer class="relative w-full h-52 md:h-[400px]">
+        <div class="h-full flex justify-center items-end">
+            <span class="text-white p-3 font-outfit font-medium">&copy; Ciwi FronEnd</span>
+        </div>
+
+        <img class="absolute bottom-0 -z-10" src="assets/earthFooter.png" alt="foto bumi">
+    </footer>
+    <!-- footer end -->
 </body>
-<img src="assets/satelit.svg" alt="satelit" class="w-[600px] h-[400px] px-16 pb-16 mx-auto flex items-center align-middle text-center">
-<section class="flex flex-col justify-center items-center align-middle text-center">
-    <h1 class="text-white lg:text-5xl text-3xl font-medium tracking-[-1.2px] py-16 text-center">Beberapa Planet Kita</h1>
-    <div class="flex px-8 gap-1 pb-16 justify-center lg:flex-row md:flex-row flex-col">
-        <div class="flex pb-8">
-            <a href="venus.html" class="relative inline-block hover:scale-110 transition-transform duration-300 p-2 group">
-                <img src="assets/venus-galeri.png" alt="venus">
-                <span class="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center text-white opacity-50 group-hover:opacity-100 transition-opacity duration-500 lg:text-2xl text-lg font-medium tracking-[-0.7]">VENUS</span>
-            </a>
-            <a href="bumi.html" class="relative inline-block hover:scale-110 transition-transform duration-300 p-2 group">
-                <img src="assets/bumi-galeri.png" alt="bumi">
-                <span class="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center text-white opacity-50 group-hover:opacity-100 transition-opacity duration-500 lg:text-2xl text-lg font-medium tracking-[-0.7]">BUMI</span>
-            </a>
-        </div>
-        <div class="flex pb-8">
-            <a href="mars.html" class="relative inline-block hover:scale-110 transition-transform duration-300 p-2 group">
-                <img src="assets/mars-galeri.png" alt="mars">
-                <span class="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center text-white opacity-50 group-hover:opacity-100 transition-opacity duration-500 lg:text-2xl text-lg font-medium tracking-[-0.7]">MARS</span>
-            </a>
-            <a href="saturnus.html" class="relative inline-block hover:scale-110 transition-transform duration-300 p-2 group">
-                <img src="assets/saturnus-galeri.png" alt="saturnus">
-                <span class="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center text-white opacity-50 group-hover:opacity-100 transition-opacity duration-500 lg:text-2xl text-lg font-medium tracking-[-0.7]">SATURNUS</span>
-            </a>
-        </div>
-    </div>
-</section>
 
 </html>
