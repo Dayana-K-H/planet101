@@ -1,92 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NASA Finds New Homes for Artemis Generation of ‘Moon Trees’ Across US</title>
-    <link rel="stylesheet" href="output.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"/>
-    <link rel="icon" href="assets/favicon.ico">
-  </head>
-  <body class="font-Outfit text-white bg-cover bg-center overflow-x-hidden scroll-smoot" style="background-image: url('assets/background.png')">
-    <!-- header start -->
-    <header class="py-5 mb-8 md:py-3 px-10 md:px-24 w-screen bg-cover h-[215px] md:h-[550px] lg:h-[850px]" style="background-image: url('assets/NewHome.svg'); background-size: cover;">
-      <nav class="flex justify-between md:justify-start">
-        <div class="flex justify-center items-center">
-          <img src="./assets/logo.svg" alt="Logo planet" />
-          <h1 class="text-xl md:text-2xl text-white">Planet101</h1>
-        </div>
-        <div>
-          <div class="nav-link pb-5 md:py-5 px-10 w-screen md:bg-transparent absolute -top-full md:top-auto left-0 md:flex md:items-center md:justify-center">
-            <ul class="flex flex-col md:flex-row gap-7 md:gap-9">
-              <li class="text-xs text-white px-5 md:px-0 md:mx-3 hover:text-ungu duration-700 ease-in-out">
-                <a href="#hero">Beranda</a>
-              </li>
-              <li class="text-xs text-white px-5 md:px-0 md:mx-3 hover:text-ungu duration-500 ease-in-out">
-                <a href="#about">Tentang</a>
-              </li>
-              <li class="text-xs text-white px-5 md:px-0 md:mx-3 hover:text-ungu duration-500 ease-in-out">
-                <a href="#">Artikel</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <span onclick="Menu()" class="block cursor-pointer md:hidden">
-          <svg class="w-10 h-10 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-            <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/>
-          </svg>
-        </span>
-      </nav>
-    </header>
-    <!-- header end -->
 
-    <!-- section article start-->
-    <section id="article">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NASA Finds New Homes for Artemis Generation of ‘Moon Trees’ Across US</title>
+  <link rel="stylesheet" href="output.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" />
+</head>
+
+<body class="font-Outfit text-white bg-cover bg-center overflow-x-hidden scroll-smoot"
+  style="background-image: url('assets/background.png')">
+  <!-- header start -->
+  <header class="py-5 mb-8 md:py-3 px-10 md:px-24 w-screen bg-cover h-[215px] md:h-[550px] lg:h-[850px]"
+    style="background-image: url('assets/NewHome.svg'); background-size: cover;">
+    <nav class="flex justify-between md:justify-start">
+      <div class="flex justify-center items-center">
+        <img src="./assets/logo.svg" alt="Logo planet" />
+        <h1 class="text-xl md:text-2xl text-white">Planet101</h1>
+      </div>
       <div>
-        <div class="flex flex-wrap">
-          <div class="w-full px-8 md:px-16 md:pt-4 lg:px-32">
-            <h2 class="text-white font-outfit text-xl mb-2 md:text-3xl md:mb-8 lg:text-4xl lg:mb-8">3 Menit Membaca</h2>
-          </div>
-          <div class="w-full px-8 md:w-1/2 md:px-8 lg:px-32">
-            <h1 class="font-semibold text-2xl mb-2 md:text-4xl md:leading-relaxed md:mb-8 md:pr-6 lg:text-6xl lg:leading-relaxed lg:mb-10">NASA Finds New Homes for Artemis Generation of ‘Moon Trees’ Across US</h1>
-            <h3 class="font-light text-base text-justify mb-10 md:text-3xl pr-2 leading-relaxed md:pr-6 lg:leading-10 lg:pr-16">
-              <span class="text-3xl md:text-5xl">24</span>April 2024
-            </h3>
-          </div>
-          <div class="w-full px-4 mb-4 md:w-1/2 md:pr-8 lg:pr-32">
-            <div class="font-light text-base text-justify p-4 bg-black bg-opacity-60 md:text-2xl leading-relaxed lg:text-3xl lg:leading-10">
-              <p>
-                Ada berita seru dari NASA! Mereka baru saja memilih pemenang 
-                untuk proyek super keren: menanam "Pohon Bulan" yang tumbuh dari 
-                biji yang ikut mengorbit Bulan dalam misi Artemis I di tahun 
-                2022! 
-              </p>
-              <br />
-              <p>
-                Bayangkan punya pohon di kotamu yang bisa dibilang petualang 
-                luar angkasa. Ratusan organisasi mendaftar untuk ikut proyek 
-                ini, dan NASA memilih yang terbaik secara bertahap sepanjang 
-                tahun. Dengan begitu, semakin banyak komunitas yang bisa 
-                memiliki sepotong sejarah luar angkasa!
-              </p>
-              <br />
-              <p>
-                Siapa saja yang bisa jadi penjaga Pohon Bulan? Nah, NASA mencari 
-                orang-orang yang bisa merawat pohon spesial ini dengan baik 
-                (tergantung jenis pohonnya tentunya) dan yang antusias untuk 
-                berbagi cerita tentang para penjelajah bulan ini dengan semua 
-                orang di sekitar mereka.
-              </p>
-              <br />
-            </div>
+        <div
+          class="nav-link pb-5 md:py-5 px-10 w-screen md:bg-transparent absolute -top-full md:top-auto left-0 md:flex md:items-center md:justify-center">
+          <ul class="flex flex-col md:flex-row gap-7 md:gap-9">
+            <li class="text-xs text-white px-5 md:px-0 md:mx-3 hover:text-ungu duration-700 ease-in-out">
+              <a href="index.html">Beranda</a>
+            </li>
+            <li class="text-xs text-white px-5 md:px-0 md:mx-3 hover:text-ungu duration-500 ease-in-out">
+              <a href="index.html#galeri">Tentang</a>
+            </li>
+            <li class="text-xs text-white px-5 md:px-0 md:mx-3 hover:text-ungu duration-500 ease-in-out">
+              <a href="index.html#artikel">Artikel</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <span onclick="Menu()" class="block cursor-pointer md:hidden">
+        <svg class="w-10 h-10 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+          fill="none" viewBox="0 0 24 24">
+          <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14" />
+        </svg>
+      </span>
+    </nav>
+  </header>
+  <!-- header end -->
+
+  <!-- section article start-->
+  <section id="article">
+    <div>
+      <div class="flex flex-wrap">
+        <div class="w-full px-8 md:px-16 md:pt-4 lg:px-32">
+          <h2 class="text-white font-outfit text-xl mb-2 md:text-3xl md:mb-8 lg:text-4xl lg:mb-8">3 Menit Membaca</h2>
+        </div>
+        <div class="w-full px-8 md:w-1/2 md:px-8 lg:px-32">
+          <h1
+            class="font-semibold text-2xl mb-2 md:text-4xl md:leading-relaxed md:mb-8 md:pr-6 lg:text-6xl lg:leading-relaxed lg:mb-10">
+            NASA Finds New Homes for Artemis Generation of ‘Moon Trees’ Across US</h1>
+          <h3
+            class="font-light text-base text-justify mb-10 md:text-3xl pr-2 leading-relaxed md:pr-6 lg:leading-10 lg:pr-16">
+            <span class="text-3xl md:text-5xl">24</span>April 2024
+          </h3>
+        </div>
+        <div class="w-full px-4 mb-4 md:w-1/2 md:pr-8 lg:pr-32">
+          <div
+            class="font-light text-base text-justify p-4 bg-black bg-opacity-60 md:text-2xl leading-relaxed lg:leading-10">
+            <p>
+              Ada berita seru dari NASA! Mereka baru saja memilih pemenang
+              untuk proyek super keren: menanam "Pohon Bulan" yang tumbuh dari
+              biji yang ikut mengorbit Bulan dalam misi Artemis I di tahun
+              2022!
+            </p>
+            <br />
+            <p>
+              Bayangkan punya pohon di kotamu yang bisa dibilang petualang
+              luar angkasa. Ratusan organisasi mendaftar untuk ikut proyek
+              ini, dan NASA memilih yang terbaik secara bertahap sepanjang
+              tahun. Dengan begitu, semakin banyak komunitas yang bisa
+              memiliki sepotong sejarah luar angkasa!
+            </p>
+            <br />
+            <p>
+              Siapa saja yang bisa jadi penjaga Pohon Bulan? Nah, NASA mencari
+              orang-orang yang bisa merawat pohon spesial ini dengan baik
+              (tergantung jenis pohonnya tentunya) dan yang antusias untuk
+              berbagi cerita tentang para penjelajah bulan ini dengan semua
+              orang di sekitar mereka.
+            </p>
+            <br />
           </div>
         </div>
       </div>
-    </section>
-    <!-- section article end-->
+    </div>
+  </section>
+  <!-- section article end-->
 
-    <!-- script -->
-    <script src="script.js"></script>
-    <!-- script -->
-  </body>
+  <!-- footer -->
+  <footer class="relative w-full h-52 md:h-[400px]">
+    <div class="h-full flex justify-center items-end">
+        <span class="text-white p-3 font-outfit font-medium">&copy; Ciwi FronEnd</span>
+    </div>
+
+    <img class="absolute bottom-0 -z-10 mix-blend-screen" src="assets/earthFooter.png" alt="foto bumi">
+</footer>
+<!-- footer end -->
+
+  <!-- script -->
+  <script src="script.js"></script>
+  <!-- script -->
+</body>
+
 </html>
