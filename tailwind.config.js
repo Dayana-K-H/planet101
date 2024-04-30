@@ -14,6 +14,33 @@ module.exports = {
       fontFamily: {
         Outfit: ["Outfit", "sans-serif"],
       },
+      keyframes: {
+        animated: {
+          '0%': {
+            transform: "rotate(330deg) translateX(0)",
+            opacity: '1'
+          },
+          '75%': {
+            opacity: '0'
+          },
+          '100%' : {
+            transform: "rotate(330deg) translateX(-1000px)",
+            opacity: '0'
+          }
+        },
+        moveY: {
+          '0%': {
+            transform: " translateX(-100%)",
+          },
+          '100%' : {
+            transform: "translateX(0)",
+          }
+        }
+      },
+      animation: {
+        starMove: 'animated 2s infinite linear',
+        bgMove: 'moveY 200s linear infinite'
+      },
     },
   },
   plugins: [],
